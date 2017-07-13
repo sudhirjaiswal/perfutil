@@ -9,7 +9,7 @@ public class JTLParser {
 	
 	public void run() throws IOException
 	{
-		String jtl="C:/Users/sudhir.jaiswal/Downloads/16k HA beconn 500/Tej_SingleFileUpload_RateLimit_03_17_2017_07_32_36_LG1.jtl";
+		String jtl="C:/Users/sudhir.jaiswal/Downloads/test.jtl";
 		BufferedReader br = null;
 		String line = "";
 		double esum=0, lsum = 0, isum = 0, csum =0;
@@ -26,9 +26,9 @@ public class JTLParser {
                     String[] IdleTime = line.split(",");
                     String[] Connect = line.split(",");
                     double elap=Double.parseDouble(elapsed[1]);
-                    double lat=Double.parseDouble(Latency[15]);
-                    double idle=Double.parseDouble(IdleTime[18]);
-                    double con=Double.parseDouble(Connect[19]);
+                    double lat=Double.parseDouble(Latency[12]);
+                    double idle=Double.parseDouble(IdleTime[13]);
+                    double con=Double.parseDouble(Connect[14]);
                     esum=esum + elap;
                     ecount++;
                     lsum=lsum + lat;
@@ -37,7 +37,7 @@ public class JTLParser {
                     icount++;
                     csum=csum + con;
                     ccount++;
-                    //System.out.println("Elapsed Time: " + elapsed[1]+" Latency: " + Latency[15]+" IdleTime: " + IdleTime[18]+" Connect Time: " + Connect[19]);
+                    System.out.println("Elapsed Time: " + elapsed[1]+" Latency: " + Latency[12]+" IdleTime: " + IdleTime[13]+" Connect Time: " + Connect[14]);
                 }
             } catch (IOException e) {
                 System.out.println("NA");

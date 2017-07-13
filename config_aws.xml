@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Configuration file for aws report generation utility</comment>
+
+	<!-- <entry key="LTELBList">LT-LB-AGW-TC-HAP-APM,LT-LB-UGW-TC-HAP-APM,LT-LB-DGW-TC-HAP-APM,LT-LB-AMK-TC-HAP-APM,LT-LB-NMD-NonMedia,LT-LB-UPL-Upload,LT-LB-DWN-Download,LT-LB-USM-UserMgmt,LT-LB-PBS-PublicService,LT-LB-ABK-AmikoBackup,LT-LB-AMG-AmikoMerger,LT-LB-ACT-AmikoCTrash,LT-LB-ARC-AmikoRecover,LT-LB-STM-Streaming</entry> -->
+	<entry key="LTELBList">LT-LB-STM-Streaming</entry>
+	<!--LT-LB-DWN-Download,LT-LB-DCS-Conversion,LT-LB-DAGW, LT-EC2-MCW-MailChampWebUINEW,LT-LB-MCGW-NEW,LT-LB-MailChamp-APINew, LT-LB-AMG-AmikoMerger,LT-LB-ACT-AmikoCTrash,LT-LB-UPL-Upload,LT-LB-UAGW, LT-LB-UGW-TC-HAP-APM,LT-LB-DGW-TC-HAP-APM,LT-LB-AMK-TC-HAP-APM,LT-LB-NMD-NonMedia,LT-LB-UPL-Upload,LT-LB-DWN-Download,LT-LB-USM-UserMgmt,LT-LB-PBS-PublicService,LT-LB-ABK-AmikoBackup,LT-LB-AMG-AmikoMerger,LT-LB-ACT-AmikoCTrash,LT-LB-ARC-AmikoRecover,LT-LB-STM-Streaming -->
+
+	<entry key="PERIOD">60</entry>
+	<entry key="COMMAND">GENERATESNAPSHOT</entry>
+	<!-- GENERATESNAPSHOT, ELBONLY and value(elb name),CASSANDRAONLY INSTANCEONLY with instanceId, 
+		or RDSONLY with rdsId -->
+	<!--Mailchamp i-03446d80046405e77,i-0354af77cc1c94b7e,i-065f15c4b4c9f2db0,i-07f005f45f42bdecf,i-0b103cae817004e21-->
+	<entry key="INSTANCEID"></entry>
+	<entry key="RDSIDLIST"></entry>
+
+	<!-- tejamkperfa1,tejamkperfa2,tejamkperfa3,tejfilperfa1,tejfilperfa2,tejfilperfa3,tejsecperf00 -->
+<entry key="STARTTIME">2017-07-07T03:47:34</entry>
+<entry key="ENDTIME">2017-07-07T04:50:53</entry>
+
+	<!-- Test start time and end time. Note that time should in UTC format only -->
+
+	<entry key="DUMPPATH">C:/Performance_testing/awsUtils/dump/</entry>
+
+	<entry key="ACCESSID"></entry>
+	<entry key="SECRETKEY"></entry>
+
+	<entry key="DATAGEN">HISTORY</entry>
+	<!-- Permissable values are HISTORY and CURRENT. If HISTORY, provide values 
+		in STARTTIME and ENDTIME as UTC times. If CURRENT, provide value in OFFSETMIN.-->
+		<entry key="CASSANDRA_INSTANCE_LIST">i-03446d80046405e77,i-0354af77cc1c94b7e,i-065f15c4b4c9f2db0,i-07f005f45f42bdecf,i-0b103cae817004e21</entry>
+	<entry key="OFFSETINMIN">30</entry>
+</properties>
