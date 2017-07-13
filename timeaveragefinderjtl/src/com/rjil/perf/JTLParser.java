@@ -9,7 +9,11 @@ public class JTLParser {
 	
 	public void run() throws IOException
 	{
+<<<<<<< HEAD
 		String jtl="C:/Users/sudhir.jaiswal/Downloads/test.jtl";
+=======
+		String jtl="jtl file path";
+>>>>>>> 0c7cb53fe4c03e41b315385683d9d915c7b71d31
 		BufferedReader br = null;
 		String line = "";
 		double esum=0, lsum = 0, isum = 0, csum =0;
