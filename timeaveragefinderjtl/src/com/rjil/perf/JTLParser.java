@@ -9,7 +9,7 @@ public class JTLParser {
 	
 	public void run() throws IOException
 	{
-		String jtl="C:/Users/sudhir.jaiswal/Downloads/16k HA beconn 500/Tej_SingleFileUpload_RateLimit_03_17_2017_07_32_36_LG1.jtl";
+		String jtl="jtl file path";
 		BufferedReader br = null;
 		String line = "";
 		double esum=0, lsum = 0, isum = 0, csum =0;
