@@ -1,4 +1,4 @@
-package com.myutils.perf;
+package com.sudhir;
 
 import com.datastax.driver.core.Cluster;  
 import com.datastax.driver.core.Host;  
